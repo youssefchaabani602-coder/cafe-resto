@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F4EDE2"/>
+      <stop offset="100%" stop-color="#DFCGB5"/>
+    </linearGradient>
+    <linearGradient id="bag2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3A261B"/>
+      <stop offset="100%" stop-color="#1E130D"/>
+    </linearGradient>
+    <linearGradient id="label2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7EFE2"/>
+      <stop offset="100%" stop-color="#E6D5BD"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#F2EAE0"/>
+  <rect x="0" y="470" width="800" height="130" fill="#E3D5C3"/>
+  <ellipse cx="400" cy="508" rx="225" ry="24" fill="#C4B097" opacity="0.6"/>
+  <!-- Coffee Bag -->
+  <path d="M275 110 L525 110 L545 495 L255 495 Z" fill="url(#bag2)"/>
+  <path d="M275 110 L525 110 L518 145 L282 145 Z" fill="#4B3224"/>
+  <circle cx="400" cy="175" r="9" fill="#2A1B12" stroke="#8C6B52" stroke-width="1.5"/>
+  <text x="400" y="218" text-anchor="middle" fill="#EADAC6" font-family="Georgia, serif" font-size="22" letter-spacing="5">MAISON MOKA</text>
+  <text x="400" y="236" text-anchor="middle" fill="#B59B82" font-family="sans-serif" font-size="9" letter-spacing="3">ESPRESSO DE LA MAISON · PARIS</text>
+  <!-- Cream & Brass Label -->
+  <rect x="292" y="260" width="216" height="168" rx="4" fill="url(#label2)"/>
+  <rect x="300" y="268" width="200" height="152" rx="2" fill="none" stroke="#9A6B42" stroke-width="1" opacity="0.55"/>
+  <text x="400" y="298" text-anchor="middle" fill="#8C5428" font-family="sans-serif" font-size="10" letter-spacing="2.5" font-weight="600">SIGNATURE HOUSE BLEND</text>
+  <text x="400" y="330" text-anchor="middle" fill="#1C140F" font-family="Georgia, serif" font-size="21" font-weight="bold">GUATEMALA ANTIGUA</text>
+  <text x="400" y="354" text-anchor="middle" fill="#6E4726" font-family="Georgia, serif" font-size="16" font-style="italic">La Folie · Volcanic Bourbon</text>
+  <line x1="335" y1="372" x2="465" y2="372" stroke="#9A6B42" stroke-width="0.75" opacity="0.5"/>
+  <text x="400" y="392" text-anchor="middle" fill="#332318" font-family="sans-serif" font-size="10.5" letter-spacing="0.8">Dark Praline · Black Fig · Velvet Crema</text>
+  <text x="400" y="410" text-anchor="middle" fill="#634832" font-family="monospace" font-size="10">1,750m MASL · 250g NET</text>
+  <text x="400" y="468" text-anchor="middle" fill="#9E846C" font-family="sans-serif" font-size="10" letter-spacing="2">WHOLE BEAN &amp; ESPRESSO GRIND</text>
+</svg>

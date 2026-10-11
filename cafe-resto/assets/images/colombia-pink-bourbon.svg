@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F6EFE6"/>
+      <stop offset="100%" stop-color="#E7D8C5"/>
+    </linearGradient>
+    <linearGradient id="bag1" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#271F1C"/>
+      <stop offset="100%" stop-color="#140F0D"/>
+    </linearGradient>
+    <linearGradient id="label1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F2D7CE"/>
+      <stop offset="100%" stop-color="#E4B8AA"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg1)"/>
+  <ellipse cx="400" cy="510" rx="220" ry="26" fill="#C9B6A0" opacity="0.55"/>
+  <rect x="0" y="475" width="800" height="125" fill="#DFD0BD" opacity="0.45"/>
+  <!-- Specialty Coffee Pouch -->
+  <path d="M275 110 L525 110 L545 495 L255 495 Z" fill="url(#bag1)" rx="12"/>
+  <path d="M275 110 L525 110 L518 145 L282 145 Z" fill="#322824"/>
+  <circle cx="400" cy="175" r="9" fill="#3E322D" stroke="#6E574E" stroke-width="1.5"/>
+  <!-- Brand Wordmark -->
+  <text x="400" y="218" text-anchor="middle" fill="#E8D8C8" font-family="Georgia, serif" font-size="22" letter-spacing="5">MAISON MOKA</text>
+  <text x="400" y="236" text-anchor="middle" fill="#A99282" font-family="sans-serif" font-size="9" letter-spacing="3">TORRÉFACTION ARTISANALE · PARIS</text>
+  <!-- Embossed Pink Bourbon Label -->
+  <rect x="292" y="260" width="216" height="168" rx="4" fill="url(#label1)"/>
+  <rect x="300" y="268" width="200" height="152" rx="2" fill="none" stroke="#8C4A3E" stroke-width="0.8" opacity="0.45"/>
+  <text x="400" y="298" text-anchor="middle" fill="#5D2A22" font-family="sans-serif" font-size="10" letter-spacing="2.5" font-weight="600">MICRO-LOT #CO-88</text>
+  <text x="400" y="330" text-anchor="middle" fill="#1E1412" font-family="Georgia, serif" font-size="23" font-weight="bold">COLOMBIA HUILA</text>
+  <text x="400" y="354" text-anchor="middle" fill="#7A352B" font-family="Georgia, serif" font-size="16" font-style="italic">El Diviso · Pink Bourbon</text>
+  <line x1="335" y1="372" x2="465" y2="372" stroke="#8C4A3E" stroke-width="0.75" opacity="0.5"/>
+  <text x="400" y="392" text-anchor="middle" fill="#3B2420" font-family="sans-serif" font-size="10.5" letter-spacing="0.8">Blood Orange · Hibiscus · Raw Honey</text>
+  <text x="400" y="410" text-anchor="middle" fill="#5C3D37" font-family="monospace" font-size="10">1,900m MASL · 250g NET</text>
+  <text x="400" y="468" text-anchor="middle" fill="#8E796B" font-family="sans-serif" font-size="10" letter-spacing="2">ROASTED AT 38 RUE DE TURENNE</text>
+</svg>

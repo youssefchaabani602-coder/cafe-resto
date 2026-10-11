@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <radialGradient id="plate" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FAF6F0"/>
+      <stop offset="85%" stop-color="#E6DDD0"/>
+      <stop offset="100%" stop-color="#C9BCA9"/>
+    </radialGradient>
+    <radialGradient id="dome" cx="42%" cy="38%" r="55%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="65%" stop-color="#EFE4D4"/>
+      <stop offset="100%" stop-color="#D5C2A8"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="#EFE8DD"/>
+  <rect x="0" y="420" width="800" height="180" fill="#E2D6C5"/>
+  <!-- Ceramic Plate -->
+  <ellipse cx="400" cy="410" rx="285" ry="92" fill="#B8A996" opacity="0.45"/>
+  <ellipse cx="400" cy="396" rx="275" ry="86" fill="url(#plate)" stroke="#D4C7B4" stroke-width="2"/>
+  <ellipse cx="400" cy="396" rx="210" ry="62" fill="none" stroke="#C8B9A4" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- Buckwheat Hazelnut Tart Shell -->
+  <path d="M250 365 C255 415, 545 415, 550 365 L535 398 C515 432, 285 432, 265 398 Z" fill="#7A4B2A"/>
+  <ellipse cx="400" cy="365" rx="150" ry="44" fill="#59341C"/>
+  <ellipse cx="400" cy="362" rx="138" ry="38" fill="#8C5832"/>
+  <!-- Cold-Infused Coffee Ganache Dome -->
+  <path d="M272 360 C272 245, 528 245, 528 360 Z" fill="url(#dome)"/>
+  <!-- Roasted Hazelnuts & Gold Leaf Accents -->
+  <circle cx="375" cy="272" r="14" fill="#6D3F20"/>
+  <circle cx="371" cy="268" r="5" fill="#9E6B43" opacity="0.7"/>
+  <circle cx="418" cy="268" r="15" fill="#5B3318"/>
+  <circle cx="414" cy="264" r="5" fill="#8D5B36" opacity="0.7"/>
+  <polygon points="396,250 405,244 402,256" fill="#D4AF37"/>
+  <text x="400" y="542" text-anchor="middle" fill="#4A3B31" font-family="Georgia, serif" font-size="18" letter-spacing="3">TARTE FINE CAFÉ BLANC &amp; NOISETTE DU PIÉMONT</text>
+</svg>
