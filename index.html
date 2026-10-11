@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAISON MOKA — Torréfaction &amp; Salon de Thé</title>
+    <meta name="description" content="Parisian specialty coffee roastery, artisanal patisserie, online boutique, and table reservation system built with HTML5, CSS3, Vanilla JavaScript, and PHP.">
+    <meta property="og:title" content="MAISON MOKA — Torréfaction &amp; Salon de Thé">
+    <meta property="og:description" content="Parisian specialty coffee roastery, artisanal patisserie, online boutique, and table reservation system built with HTML5, CSS3, Vanilla JavaScript, and PHP.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Slim Dismissible Storefront Notice (<= 40px height) -->
+    <div class="top-notice-bar" id="top-notice-bar" role="region" aria-label="Roastery Dispatch Notice">
+        <div class="container top-notice-inner">
+            <p class="top-notice-text">
+                Roasted every Tuesday &amp; Friday at 38 Rue de Turenne · Complimentary Paris courier delivery from €45.00 · Code <span class="mono-inline">MOKA10</span> for 10% off first bean order
+            </p>
+            <button type="button" class="top-notice-close" id="dismiss-notice-btn" aria-label="Dismiss announcement">Dismiss</button>
+        </div>
+    </div>
+
+    <!-- Strict 3-Zone Top Navigation Bar -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <!-- Zone 1: Single-line Brand Wordmark -->
+            <a href="index.php" class="brand-wordmark">MAISON MOKA</a>
+
+            <!-- Zone 2: 5 Single-Line Navigation Links -->
+            <nav class="primary-nav" id="primary-nav" aria-label="Main Navigation">
+                <a href="menu.php" class="nav-link ">Menu &amp; Shop</a>
+                <a href="reservation.php" class="nav-link ">Reservations</a>
+                <a href="about.php" class="nav-link ">Our Story</a>
+                <a href="contact.php" class="nav-link ">Contact</a>
+                <a href="checkout.php" class="nav-link ">Order Review</a>
+            </nav>
+
+            <!-- Zone 3: 1 Primary Action -->
+            <div class="header-actions">
+                <a href="cart.php" class="btn btn-primary header-bag-btn" aria-label="View Shopping Bag">
+                    <span>Shopping Bag (<span id="header-cart-count" class="tabular-nums">0</span>) · <span id="header-cart-total" class="tabular-nums">€0.00</span></span>
+                </a>
+                <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+                    Menu
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+<!-- Section 1: Storefront Hero -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-grid">
+            <div class="hero-copy">
+                <p class="eyebrow-meta">
+                    <span>38 Rue de Turenne · Paris IIIe</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Est. 2018</span>
+                </p>
+                <h1 class="hero-headline">
+                    High-Altitude Micro-Lots &amp; Haute Pâtisserie in the Heart of Le Marais.
+                </h1>
+                <p class="hero-lead">
+                    Every Tuesday and Friday morning, our Loring convection roaster brings single-estate coffees from Gedeb, Huila, and Antigua to peak clarity—paired in our limestone salon with warm choux craquelin and Charentes-Poitou viennoiserie.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="menu.php" class="btn btn-primary btn-lg">Explore Roastery &amp; Menu</a>
+                    <a href="reservation.php" class="btn btn-secondary btn-lg">Reserve a Salon Table</a>
+                </div>
+                <p class="hero-trust-note">
+                    <span>87.5+ SCA Cupping Standard</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Same-Day Paris Bike Courier</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Click &amp; Collect in 30 Mins</span>
+                </p>
+            </div>
+
+            <div class="hero-media">
+                <div class="media-frame media-frame-16x9">
+                    <img
+                        src="assets/images/hero-maison-moka.jpg"
+                        alt="Sunlit limestone interior of Maison Moka Paris with brass espresso machine and freshly baked viennoiserie on marble counter"
+                        referrerPolicy="no-referrer"
+                        class="media-img"
+                    >
+                </div>
+            </div>
+        </div>
+
+        <!-- Full-Width 4-Column Provenance & Service Strip -->
+        <div class="provenance-strip" aria-label="Roastery Standards and Metrics">
+            <div class="provenance-item">
+                <span class="provenance-metric tabular-nums">1,650m – 2,300m</span>
+                <span class="provenance-label">Strictly High-Grown Arabica Lots</span>
+            </div>
+            <div class="provenance-item">
+                <span class="provenance-metric tabular-nums">100% Farm-Direct</span>
+                <span class="provenance-label">Verified Station &amp; Harvest Transparency</span>
+            </div>
+            <div class="provenance-item">
+                <span class="provenance-metric tabular-nums">06:30 Morning Bake</span>
+                <span class="provenance-label">AOP Butter Lamination &amp; Fresh Choux</span>
+            </div>
+            <div class="provenance-item">
+                <span class="provenance-metric tabular-nums">Free from €45.00</span>
+                <span class="provenance-label">Zero-Emission Paris Courier Dispatch</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section 2: Featured Roastery & Patisserie Collection -->
+<section class="section-block" id="featured-collection">
+    <div class="container">
+        <div class="section-header-row">
+            <div>
+                <p class="eyebrow-meta">
+                    <span>Curated Selection</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Autumn–Winter Harvest</span>
+                </p>
+                <h2 class="section-title">Signature Roasts &amp; Morning Patisserie</h2>
+            </div>
+            <a href="menu.php" class="text-action-link">View Full Catalog (8 Offerings) &rarr;</a>
+        </div>
+
+        <div class="product-grid">
+                            <article class="product-card">
+                    <a href="product.php?id=ethiopia-yirgacheffe" class="product-card-media" aria-label="View details for Ethiopia Yirgacheffe Halo Beriti">
+                        <img
+                            src="assets/images/ethiopia-yirgacheffe.jpg"
+                            alt="Ethiopia Yirgacheffe Halo Beriti — Washed Lot · Bergamot, White Peach &amp; Jasmine Blossom"
+                            referrerPolicy="no-referrer"
+                            class="product-card-img"
+                            loading="lazy"
+                        >
+                    </a>
+                    <div class="product-card-body">
+                        <p class="product-meta-line">
+                            <span>Single-Origin Beans</span>
+                            <span aria-hidden="true">·</span>
+                            <span>250g Whole Bean / Ground</span>
+                        </p>
+                        <h3 class="product-card-title">
+                            <a href="product.php?id=ethiopia-yirgacheffe">Ethiopia Yirgacheffe Halo Beriti</a>
+                        </h3>
+                        <p class="product-card-tagline">Washed Lot · Bergamot, White Peach &amp; Jasmine Blossom</p>
+
+                        <div class="product-card-footer">
+                            <span class="product-price tabular-nums">€18.50</span>
+                            <form action="cart.php" method="post" class="quick-add-form" data-product-id="ethiopia-yirgacheffe" data-product-name="Ethiopia Yirgacheffe Halo Beriti" data-product-price="18.5">
+                                <input type="hidden" name="csrf_token" value="becd22bbd5d207ec4b28d168ec9e24693d84e55fe6b628a7f3b5ec89c22ebb77">                                <input type="hidden" name="action" value="add">
+                                <input type="hidden" name="product_id" value="ethiopia-yirgacheffe">
+                                <input type="hidden" name="option" value="Whole Bean (Recommended)">
+                                <input type="hidden" name="quantity" value="1">
+                                <button type="submit" class="btn btn-secondary btn-sm">Add to Bag</button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                            <article class="product-card">
+                    <a href="product.php?id=pistachio-paris-brest" class="product-card-media" aria-label="View details for Paris-Brest Pistache de Bronte">
+                        <img
+                            src="assets/images/pistachio-paris-brest.jpg"
+                            alt="Paris-Brest Pistache de Bronte — Choux Craquelin · Roasted Pistachio Mousseline &amp; Praline Core"
+                            referrerPolicy="no-referrer"
+                            class="product-card-img"
+                            loading="lazy"
+                        >
+                    </a>
+                    <div class="product-card-body">
+                        <p class="product-meta-line">
+                            <span>Artisanal Patisserie</span>
+                            <span aria-hidden="true">·</span>
+                            <span>135g Individual Pastry</span>
+                        </p>
+                        <h3 class="product-card-title">
+                            <a href="product.php?id=pistachio-paris-brest">Paris-Brest Pistache de Bronte</a>
+                        </h3>
+                        <p class="product-card-tagline">Choux Craquelin · Roasted Pistachio Mousseline &amp; Praline Core</p>
+
+                        <div class="product-card-footer">
+                            <span class="product-price tabular-nums">€8.80</span>
+                            <form action="cart.php" method="post" class="quick-add-form" data-product-id="pistachio-paris-brest" data-product-name="Paris-Brest Pistache de Bronte" data-product-price="8.8">
+                                <input type="hidden" name="csrf_token" value="becd22bbd5d207ec4b28d168ec9e24693d84e55fe6b628a7f3b5ec89c22ebb77">                                <input type="hidden" name="action" value="add">
+                                <input type="hidden" name="product_id" value="pistachio-paris-brest">
+                                <input type="hidden" name="option" value="Individual Pastry Box (Chilled)">
+                                <input type="hidden" name="quantity" value="1">
+                                <button type="submit" class="btn btn-secondary btn-sm">Add to Bag</button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                            <article class="product-card">
+                    <a href="product.php?id=signature-cortado" class="product-card-media" aria-label="View details for Le Cortado de la Maison &amp; Pain au Chocolat">
+                        <img
+                            src="assets/images/signature-cortado.jpg"
+                            alt="Le Cortado de la Maison &amp; Pain au Chocolat — Double Ristretto Moka Blend · Velvety Microfoam &amp; Valrhona Viennoiserie"
+                            referrerPolicy="no-referrer"
+                            class="product-card-img"
+                            loading="lazy"
+                        >
+                    </a>
+                    <div class="product-card-body">
+                        <p class="product-meta-line">
+                            <span>Espresso &amp; Slow Bar</span>
+                            <span aria-hidden="true">·</span>
+                            <span>140ml Beverage + 95g Viennoiserie</span>
+                        </p>
+                        <h3 class="product-card-title">
+                            <a href="product.php?id=signature-cortado">Le Cortado de la Maison &amp; Pain au Chocolat</a>
+                        </h3>
+                        <p class="product-card-tagline">Double Ristretto Moka Blend · Velvety Microfoam &amp; Valrhona Viennoiserie</p>
+
+                        <div class="product-card-footer">
+                            <span class="product-price tabular-nums">€9.50</span>
+                            <form action="cart.php" method="post" class="quick-add-form" data-product-id="signature-cortado" data-product-name="Le Cortado de la Maison &amp; Pain au Chocolat" data-product-price="9.5">
+                                <input type="hidden" name="csrf_token" value="becd22bbd5d207ec4b28d168ec9e24693d84e55fe6b628a7f3b5ec89c22ebb77">                                <input type="hidden" name="action" value="add">
+                                <input type="hidden" name="product_id" value="signature-cortado">
+                                <input type="hidden" name="option" value="Organic Normandy Whole Milk">
+                                <input type="hidden" name="quantity" value="1">
+                                <button type="submit" class="btn btn-secondary btn-sm">Add to Bag</button>
+                            </form>
+                        </div>
+                    </div>
+                </article>
+                    </div>
+    </div>
+</section>
+
+<!-- Section 3: Craftsmanship, Sourcing & Proof of Quality -->
+<section class="section-block section-surface">
+    <div class="container">
+        <div class="editorial-bento-grid">
+            <div class="bento-col-main">
+                <p class="eyebrow-meta">
+                    <span>Torréfaction &amp; Savoir-Faire</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Rue de Turenne Atelier</span>
+                </p>
+                <h2 class="section-title">Precision Roasting Paired with Classical French Patisserie</h2>
+                <p class="body-prose">
+                    Unlike conventional dark roasts that mask terroir behind carbonized bitterness, Maison Moka roasts each single-origin lot to highlight its natural organic acids and fruit sugars. Every batch is logged with bean-probe telemetry and cupped within 18 hours of roasting.
+                </p>
+
+                <ol class="editorial-numbered-list">
+                    <li>
+                        <h3 class="numbered-item-title">01. Direct Harvest Contracting (+38% Above Fair-Trade Baseline)</h3>
+                        <p class="numbered-item-text">
+                            We partner directly with washing stations in Gedeb (Ethiopia), Pitalito (Colombia), and Sacatepéquez (Guatemala), paying an average farm-gate premium 38% above commodity benchmarks for 87.5+ point micro-lots.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="numbered-item-title">02. Custom Water Mineralization &amp; Slow Extraction</h3>
+                        <p class="numbered-item-text">
+                            Our brew bar utilizes reverse-osmosis water remineralized with magnesium and bicarbonate to 75 ppm total hardness, ensuring balanced extraction across V60 pour-overs and 9-bar espresso shots.
+                        </p>
+                    </li>
+                    <li>
+                        <h3 class="numbered-item-title">03. Twice-Daily Patisserie Production</h3>
+                        <p class="numbered-item-text">
+                            Led by Chef Pâtissier Claire Vasseur, our pastry kitchen laminates Charentes-Poitou AOP butter doughs over 48 hours and pipes roasted Bronte pistachio mousseline fresh for morning and afternoon salon seatings.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+
+            <aside class="bento-col-side">
+                <div class="proof-card">
+                    <p class="eyebrow-meta">
+                        <span>Verified Patron &amp; Culinary Review</span>
+                        <span aria-hidden="true">·</span>
+                        <span>Le Marais Flagship</span>
+                    </p>
+                    <blockquote class="testimonial-quote">
+                        “Switching our morning espresso ritual and weekend pastry orders to Maison Moka transformed how we experience coffee in Paris. Their Halo Beriti Yirgacheffe has the clarity of fine white tea, and the Pistachio Paris-Brest is unmatched in the 3rd arrondissement.”
+                    </blockquote>
+                    <div class="testimonial-attribution">
+                        <strong class="attribution-name">Henri &amp; Camille Delacroix</strong>
+                        <span class="attribution-role">Founding Architects, Atelier Delacroix · Weekly Bean Subscribers Since 2022</span>
+                    </div>
+                </div>
+
+                <div class="roast-schedule-card">
+                    <h3 class="card-subheading">Weekly Roastery &amp; Cupping Calendar</h3>
+                    <dl class="schedule-list">
+                        <div class="schedule-row">
+                            <dt>Tuesday · 08:00</dt>
+                            <dd>Single-Origin Filter Roast &amp; Dispatch</dd>
+                        </div>
+                        <div class="schedule-row">
+                            <dt>Thursday · 16:00</dt>
+                            <dd>Public Guided Cupping (6 Guests Max)</dd>
+                        </div>
+                        <div class="schedule-row">
+                            <dt>Friday · 08:00</dt>
+                            <dd>Espresso Blend Roast &amp; Weekend Prep</dd>
+                        </div>
+                    </dl>
+                    <a href="about.php" class="text-action-link">Read Our Full Roastery Philosophy &rarr;</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<!-- Section 4: Salon de Thé Reservation Showcase -->
+<section class="section-block">
+    <div class="container">
+        <div class="salon-showcase-grid">
+            <div class="salon-showcase-media">
+                <div class="media-frame media-frame-16x9">
+                    <img
+                        src="assets/images/salon-dining.jpg"
+                        alt="Intimate Parisian dining room at Maison Moka with leather banquettes, marble bistro tables, and warm brass lamps"
+                        referrerPolicy="no-referrer"
+                        class="media-img"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+            <div class="salon-showcase-copy">
+                <p class="eyebrow-meta">
+                    <span>Salon de Thé &amp; Slow Bar</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Table Reservations</span>
+                </p>
+                <h2 class="section-title">Reserve Your Table at 38 Rue de Turenne</h2>
+                <p class="body-prose">
+                    Join us in our warm limestone salon, at the interactive slow-bar counter overlooking our vintage brass roaster, or in the sheltered courtyard garden. Table reservations include priority patisserie selection and guided filter flights.
+                </p>
+                <p class="salon-meta-details">
+                    <span>1 to 8 Guests</span>
+                    <span aria-hidden="true">·</span>
+                    <span>90-Minute Seating Windows</span>
+                    <span aria-hidden="true">·</span>
+                    <span>Complimentary Reservation</span>
+                </p>
+                <div class="hero-cta-group">
+                    <a href="reservation.php" class="btn btn-primary">Book a Table Online</a>
+                    <a href="contact.php" class="btn btn-secondary">Private Cuppings &amp; Events</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand-col">
+                    <a href="index.php" class="footer-wordmark">MAISON MOKA</a>
+                    <p class="footer-address">
+                        38 Rue de Turenne, 75003 Paris · Le Marais<br>
+                        Torréfaction Artisanale, Pâtisserie &amp; Salon de Thé
+                    </p>
+                    <p class="footer-meta-line">
+                        Direct-Trade Micro-Lots · Loring S15 Falcon Roaster · Daily Laminated Viennoiserie
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h2 class="footer-heading">Boutique &amp; Salon</h2>
+                    <ul class="footer-links">
+                        <li><a href="menu.php">Full Menu &amp; Roastery Shop</a></li>
+                        <li><a href="menu.php?category=beans">Single-Origin Coffee Beans</a></li>
+                        <li><a href="menu.php?category=patisserie">Artisanal Patisserie</a></li>
+                        <li><a href="menu.php?category=espresso">Espresso &amp; Slow Bar</a></li>
+                        <li><a href="reservation.php">Reserve a Salon Table</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h2 class="footer-heading">Maison &amp; Service</h2>
+                    <ul class="footer-links">
+                        <li><a href="about.php">Our Heritage &amp; Roastery</a></li>
+                        <li><a href="contact.php">Contact &amp; Private Cuppings</a></li>
+                        <li><a href="cart.php">Shopping Bag</a></li>
+                        <li><a href="checkout.php">Demo Order Review</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h2 class="footer-heading">Opening Hours</h2>
+                    <dl class="footer-hours">
+                        <div class="hours-row">
+                            <dt>Tue – Fri</dt>
+                            <dd class="tabular-nums">08:00 – 19:00</dd>
+                        </div>
+                        <div class="hours-row">
+                            <dt>Saturday</dt>
+                            <dd class="tabular-nums">08:30 – 19:30</dd>
+                        </div>
+                        <div class="hours-row">
+                            <dt>Sunday</dt>
+                            <dd class="tabular-nums">09:00 – 18:00</dd>
+                        </div>
+                        <div class="hours-row">
+                            <dt>Monday</dt>
+                            <dd>Roastery Production Only</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2026 MAISON MOKA Paris. Built with semantic HTML5, CSS3, Vanilla JavaScript &amp; PHP Sessions.
+                </p>
+                <p class="footer-disclaimer">
+                    Demo Environment Notice: Orders, table reservations, and contact inquiries are validated and stored in your active PHP session for demonstration purposes. No real payment cards are charged and no external emails are dispatched.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Feedback Region for Vanilla JS Cart & Form Interactions -->
+    <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="amber" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#4A2512"/>
+      <stop offset="50%" stop-color="#291207"/>
+      <stop offset="100%" stop-color="#140803"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#F3ECE2"/>
+  <rect x="0" y="475" width="800" height="125" fill="#E3D7C7"/>
+  <ellipse cx="400" cy="505" rx="150" ry="22" fill="#C2B19C" opacity="0.6"/>
+  <!-- Apothecary Glass Bottle -->
+  <rect x="372" y="102" width="56" height="24" rx="4" fill="#9A4B26"/>
+  <rect x="376" y="126" width="48" height="36" fill="#3B2316"/>
+  <path d="M376 162 C330 185, 310 215, 310 255 L310 480 C310 495, 322 502, 340 502 L460 502 C478 502, 490 495, 490 480 L490 255 C490 215, 470 185, 424 162 Z" fill="url(#amber)"/>
+  <!-- Glass Highlight -->
+  <path d="M326 245 L326 472" stroke="#8C583A" stroke-width="4" stroke-linecap="round" opacity="0.35"/>
+  <!-- Minimalist Parchment Label -->
+  <rect x="328" y="268" width="144" height="172" rx="2" fill="#FAF5EC"/>
+  <rect x="334" y="274" width="132" height="160" fill="none" stroke="#9A4B26" stroke-width="0.75" opacity="0.5"/>
+  <text x="400" y="302" text-anchor="middle" fill="#1C1613" font-family="Georgia, serif" font-size="14" letter-spacing="3">MAISON MOKA</text>
+  <line x1="355" y1="312" x2="445" y2="312" stroke="#9A4B26" stroke-width="0.6" opacity="0.5"/>
+  <text x="400" y="338" text-anchor="middle" fill="#1C1613" font-family="Georgia, serif" font-size="17" font-weight="bold">INFUSION À FROID</text>
+  <text x="400" y="358" text-anchor="middle" fill="#7A3E20" font-family="Georgia, serif" font-size="13" font-style="italic">Cascara &amp; Cardamome</text>
+  <text x="400" y="388" text-anchor="middle" fill="#5C4E46" font-family="sans-serif" font-size="9.5" letter-spacing="0.8">16-Hour Kyoto Slow Drip</text>
+  <text x="400" y="418" text-anchor="middle" fill="#5C4E46" font-family="monospace" font-size="9.5">250ML · PARIS IIIe</text>
+</svg>
